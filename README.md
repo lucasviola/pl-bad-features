@@ -28,9 +28,9 @@ var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).re
 * Example
 
 ```javascript
-console.log(",,," == new Array(4)); // true
-null == undefined; //true
-[] == false
+1. console.log(",,," == new Array(4)); // true
+2. null == undefined; //true
+3. [] == false
 ```
 
 * Explanation
@@ -45,7 +45,7 @@ it will return true.
 
 * How to fix it
 <p>
-Using the `===` comparison operator.
+1. Using the `===` comparison operator.
 Because it not only compares values but types
 <p>
 ## Automatic semi-colon insertion
