@@ -10,6 +10,7 @@
 	- [Automatic semicolon insertion](#automatic-semicolon-insertion)
 	- [Implied global variables](#implied-global-variables)
 - [Python](#python)
+	- [The whitespace issue](#the-whitespace-issue)
 - [Ruby](#ruby)
 - [Java](#java)
 	- [Sun misc unsafe](#sun-misc-unsafe)
@@ -106,6 +107,16 @@ the interpreter will then declare it globally.
 at the beginning of a file or function, so globals will throw
 a ReferenceError
 3. If you are writing a module, put yout code in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) or better yet, learn to work with the [Module Pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript).
+
+# Python
+
+## The Whitespace Issue
+
+#### Examples
+
+#### Explanations
+
+#### Solutions
 
 # Java
 
