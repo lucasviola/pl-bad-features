@@ -52,7 +52,7 @@ Using the `===` comparison operator.
 Because it not only compares values but types.
 <p>
 
-## Automatic semi-colon insertion
+## Automatic semicolon insertion
 
 #### Example
 
@@ -72,5 +72,19 @@ var foo = function () {
 ### Implied Global variables
 
 #### Example
+
+```javascript
+var foo = function () {
+	var localVariable = 'local';
+	globalVariable = 'global';
+}
+console.log(globalVariable); // global
+```
+
 #### Explanation
+
 #### Solutions
+1. Always use the `var` keyword before declaring variables.
+2. Enable the ECMAScript 5 strict mode with: `'use strict';`
+at the beginning of a file or function, so globals will throw
+a ReferenceError
