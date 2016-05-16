@@ -78,7 +78,7 @@ var foo = function () {
 	var localVariable = 'local';
 	globalVariable = 'global';
 }
-console.log(globalVariable); // global
+foo();
 ```
 
 #### Explanation
