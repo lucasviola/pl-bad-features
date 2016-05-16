@@ -55,6 +55,16 @@ Because it not only compares values but types.
 ## Automatic semi-colon insertion
 
 #### Example
+
+```javascript
+var foo = function () {
+	return
+	{
+		1: 'a'
+	}
+} // throws a syntax error
+```
+
 #### Explanation
 #### Solutions
 
