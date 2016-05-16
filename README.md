@@ -37,12 +37,13 @@ Don't use eval :)
 
 ## Confusing comparision operator
 
-#### Example
+#### Examples
 
 ```javascript
 ",,," == new Array(4)); // true
 null == undefined; //true
 [] == false; // true
+0 == "\t\r" // true
 ```
 
 #### Explanation
