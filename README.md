@@ -35,18 +35,21 @@ null == undefined; //true
 
 #### Explanation
 <p>
-The `==` operator compares just the value on both side
-of the equality. Now, in the first example, on the left side
-we have a string with 3 commas, on the right side a initialized
-Array with 4 positions, which will evaluate to [, , ,] and get cast
-to a String, so the interpreter can compare the evalues. That's why
-it will return true.
+The `==` operator has a few problems.
+1. It compares just the values on both sides of the equality.
+2. It allows type coercing(implicit type casting).
+
+Now, in the first example we can see both of these problems. 
+On the left side we have a string with 3 commas, on the right 
+side an initialized Array with 4 positions, which will evaluate 
+to [, , ,] and get cast to a String, so the interpreter can compare 
+the evalues. That's why it returns true.
 <p>
 
 #### Solutions
 <p>
-1. Using the `===` comparison operator.
-Because it not only compares values but types
+Using the `===` comparison operator.
+Because it not only compares values but types.
 <p>
 
 ## Automatic semi-colon insertion
