@@ -5,9 +5,15 @@
 **Table of Contents**
 
 - [JavaScript](#javascript)
+	- [eval() function](#eval())
+	- [Confusing comparision operator](#confusing-comparision-operator)
+	- [Automatic semicolon insertion](#automatic-semicolon-insertion)
+	- [Implied global variables](#implied-global-variables)
 - [Python](#python)
 - [Ruby](#ruby)
 - [Java](#java)
+	- [Sun misc unsafe](#sun-misc-unsafe)
+	- [Null referencing](#null-referencing)
 - [PHP](#php)
 
 # JavaScript
