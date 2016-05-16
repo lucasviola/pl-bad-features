@@ -20,11 +20,11 @@
 var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).reverse().join('')");
 ```
 #### Explanation
-The eval() function evaluates javascript code dynamically. This leads to a few problem.
+The eval() function evaluates javascript code dynamically. This leads to a few problems.
 
-1. Using it improperly in the client-side could lead to code injection attacks.
+1. Using it improperly on the client-side could lead to code injection attacks.
 2. As you can see in my example, the code inside the eval can become very hard to read.
-3. It could make your run code slower.
+3. It could make your code slow.
 
 #### Solutions
 Don't use eval :)
