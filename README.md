@@ -14,26 +14,26 @@
 
 ## eval()
 
-* Example
+#### Example
 
 ```
 var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).reverse().join('')");
 ```
-* Explanation
+#### Explanation
 
-* Why?
+#### Solutions
 
 ## Confusing comparision operator
 
-* Example
+#### Example
 
 ```javascript
-1. console.log(",,," == new Array(4)); // true
-2. null == undefined; //true
-3. [] == false
+console.log(",,," == new Array(4)); // true
+null == undefined; //true
+[] == false // true
 ```
 
-* Explanation
+#### Explanation
 <p>
 The `==` operator compares just the value on both side
 of the equality. Now, in the first example, on the left side
@@ -43,20 +43,21 @@ to a String, so the interpreter can compare the evalues. That's why
 it will return true.
 <p>
 
-* How to fix it
+#### Solutions
 <p>
 1. Using the `===` comparison operator.
 Because it not only compares values but types
 <p>
+
 ## Automatic semi-colon insertion
 
-* Example
-* Explanation
-* How to fix it
+#### Example
+#### Explanation
+#### Solutions
+
 
 ### Implied Global variables
 
-* Example
-* Explanation
-* How to fix it
-
+#### Example
+#### Explanation
+#### Solutions
