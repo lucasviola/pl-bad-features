@@ -16,7 +16,7 @@
 
 #### Example
 
-```
+```javascript
 var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).reverse().join('')");
 ```
 #### Explanation
@@ -28,9 +28,9 @@ var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).re
 #### Example
 
 ```javascript
-console.log(",,," == new Array(4)); // true
+",,," == new Array(4)); // true
 null == undefined; //true
-[] == false // true
+[] == false; // true
 ```
 
 #### Explanation
