@@ -50,7 +50,7 @@ On the left side we have a string with 3 commas, on the right
 side an initialized Array with 4 positions, which will evaluate 
 to [, , ,] and get cast to a String, so the interpreter can compare 
 the evalues. That's why it returns true.
-<p>
+</p>
 
 #### Solutions
 <p>
