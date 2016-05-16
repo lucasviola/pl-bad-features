@@ -12,4 +12,12 @@
 
 # JavaScript
 
+## eval()
 
+* Example
+
+```
+var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).reverse().join('')");
+```
+
+* Why?
