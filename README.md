@@ -87,9 +87,19 @@ foo();
 ```
 
 #### Explanation
+<p>
+This has to do with the way JavaScript deals with
+the scope chain. When you don't use the `var` keyword,
+the interpreter will assume you are referencing a variable.
+So, if the interpreter can't find the variable in the inner scope,
+it will look for it in the outer scope, and will keep doing it until
+it reaches the global scope. If it cannot find the variable at all,
+the interpreter will then declare it globally.
+</p>
 
 #### Solutions
 1. Always use the `var` keyword before declaring variables.
 2. Enable the ECMAScript 5 strict mode with: `'use strict';`
 at the beginning of a file or function, so globals will throw
 a ReferenceError
+3. If you are writing a module, put yout code in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) or better yet, learn to work with the [Module Pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript).
