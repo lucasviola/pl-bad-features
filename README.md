@@ -24,7 +24,8 @@
 #### Example
 
 ```javascript
-var worstPossibleExample = eval("[].map.call('Eval', function(x){ return x;}).reverse().join('')");
+var worstPossibleExample = eval("[].map.call('Eval is evil', function(x){ return x;}).reverse().join('')");
+console.log(worstPossibleExample);
 ```
 #### Explanation
 The eval() function evaluates javascript code dynamically. This leads to a few problems.
@@ -48,7 +49,8 @@ null == undefined; //true
 ```
 
 #### Explanation
-The `==` operator has a few problems.
+
+The `==` operator has a few problems:
 1. It compares just the values on both sides of the equality.
 2. It allows type coercing(implicit type casting).
 
@@ -59,12 +61,13 @@ to [, , ,] and get cast to a String, so the interpreter can compare
 the evalues. That's why it returns true.
 
 #### Solutions
+
 Using the `===` comparison operator.
 Because it not only compares values but types.
 
 ## Automatic semicolon insertion
 
-#### Example
+#### Examples
 
 ```javascript
 var foo = function () {
@@ -135,3 +138,6 @@ a ReferenceError
 #### Explanations
 
 #### Solutions
+
+# PHP
+
